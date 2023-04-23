@@ -1,6 +1,10 @@
-numeros = input("Digite três números: ").split()
+x, y, z = input("Digite três números: ").split()
 
-for i in range(3):
-    maior = (int(numeros[i]) + int(numeros[i+1]) + abs(int(numeros[i]) - int(numeros[i+1])))/2
+x = int(x)
+y = int(y)
+z = int(z)
 
-    print(maior)
+maiorXY = (x + y + abs(x - y))/2
+maiorXYZ = (maiorXY + z + abs(maiorXY - z))/2
+
+print(maiorXYZ, "eh o maior")
